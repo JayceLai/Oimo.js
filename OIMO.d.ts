@@ -44,100 +44,106 @@ declare namespace OIMO {
 
     class Vec3 {
         constructor (x?: number, y?: number, z?: number);
+        x: number;
+        y: number;
+        z: number;
         Vec3: true;
-        set: function(x, y, z);
-        add: function (a, b);
-        addVectors: function (a, b);
-        addEqual: function (v);
-        sub: function (a, b);
-        subVectors: function (a, b);
-        subEqual: function (v);
-        scale: function (v, s);
-        scaleEqual: function(s);
-        multiply: function(v);
-        scaleVectorEqual: function(v);
-        addScaledVector: function (v, s);
-        subScaledVector: function (v, s);
-        addScale: function (v, s);
-        subScale: function (v, s);
-        cross: function(a, b);
-        crossVectors: function (a, b);
-        tangent: function (a);
-        invert: function (v);
-        negate: function ();
-        dot: function (v);
-        addition: function ();
-        lengthSq: function ();
-        length: function ();
-        copy: function(v);
-        mulMat: function(m, a);
-        applyMatrix3: function (m, transpose);
-        applyQuaternion: function (q);
-        testZero: function ();
-        testDiff: function(v);
-        equals: function (v);
-        clone: function ();
-        toString: function();
-        multiplyScalar: function (scalar);
-        divideScalar: function (scalar);
-        normalize: function ();
-        toArray: function (array, offset);
-        fromArray: function(array, offset);
+        set (x, y, z): any;
+        add (a, b): any;
+        addVectors (a, b): any;
+        addEqual (v): any;
+        sub (a, b): any;
+        subVectors (a, b): any;
+        subEqual (v): any;
+        scale (v, s): any;
+        scaleEqual (s): any;
+        multiply (v): any;
+        scaleVectorEqual (v): any;
+        addScaledVector (v, s): any;
+        subScaledVector (v, s): any;
+        addScale (v, s): any;
+        subScale (v, s): any;
+        cross (a, b): any;
+        crossVectors (a, b): any;
+        tangent (a): any;
+        invert (v): any;
+        negate (): any;
+        dot (v): any;
+        addition (): any;
+        lengthSq (): any;
+        length (): any;
+        copy (v): any;
+        mulMat (m, a): any;
+        applyMatrix3 (m, transpose): any;
+        applyQuaternion (q): any;
+        testZero (): any;
+        testDiff (v): any;
+        equals (v): any;
+        clone (): any;
+        toString (): any;
+        multiplyScalar (scalar): any;
+        divideScalar (scalar): any;
+        normalize (): any;
+        toArray (array, offset): any;
+        fromArray (array, offset): any;
     }
 
     class Quat {
         constructor (x?: number, y?: number, z?: number, w?: number);
+        x: number;
+        y: number;
+        z: number;
+        w: number;
         Quat: true;
-        set: function (x, y, z, w);
-        addTime: function(v, t);
-        multiply: function (q, p);
-        multiplyQuaternions: function (a, b);
-        setFromUnitVectors: function(v1, v2);
-        arc: function(v1, v2);
-        normalize: function();
-        inverse: function ();
-        invert: function (q);
-        conjugate: function ();
-        length: function();
-        lengthSq: function ();
-        copy: function(q);
-        clone: function(q);
-        testDiff: function (q);
-        equals: function (q);
-        toString: function();
-        setFromEuler: function (x, y, z);
-        setFromAxis: function (axis, rad);
-        setFromMat33: function (m);
-        toArray: function (array, offset);
-        fromArray: function(array, offset);
+        set (x, y, z, w): any;
+        addTime (v, t): any;
+        multiply (q, p): any;
+        multiplyQuaternions (a, b): any;
+        setFromUnitVectors (v1, v2): any;
+        arc (v1, v2): any;
+        normalize (): any;
+        inverse (): any;
+        invert (q): any;
+        conjugate (): any;
+        length (): any;
+        lengthSq (): any;
+        copy (q): any;
+        clone (q): any;
+        testDiff (q): any;
+        equals (q): any;
+        toString (): any;
+        setFromEuler (x, y, z): any;
+        setFromAxis (axis, rad): any;
+        setFromMat33 (m): any;
+        toArray (array, offset): any;
+        fromArray (array, offset): any;
     }
 
     class Mat33 {
         constructor ();
         Mat33: true;
-        set: function (e00, e01, e02, e10, e11, e12, e20, e21, e22);
-        add: function (a, b);
-        addMatrixs: function (a, b);
-        addEqual: function(m);
-        sub: function (a, b);
-        subMatrixs: function (a, b);
-        subEqual: function (m);
-        scale: function (m, s);
-        scaleEqual: function (s);// multiplyScalar
-        multiplyMatrices: function (m1, m2, transpose);
-        transpose: function (m);
-        transpose: function (m);
-        setQuat: function (q);
-        invert: function(m);
-        addOffset: function (m, v);
-        subOffset: function (m, v);
-        multiplyScalar: function (s);
-        identity: function ();
-        clone: function ();
-        copy: function (m);
-        determinant: function ();
-        fromArray: function (array, offset);
-        toArray: function (array, offset);
+        set (e00, e01, e02, e10, e11, e12, e20, e21, e22): any;
+        add (a, b): any;
+        addMatrixs (a, b): any;
+        addEqual (m): any;
+        sub (a, b): any;
+        subMatrixs (a, b): any;
+        subEqual (m): any;
+        scale (m, s): any;
+        scaleEqual (s);// multiplyScala:anyr
+        multiplyMatrices (m1, m2, transpose): any;
+        transpose (m): any;
+        setQuat (q): any;
+        invert (m): any;
+        addOffset (m, v): any;
+        subOffset (m, v): any;
+        multiplyScalar (s): any;
+        identity (): any;
+        clone (): any;
+        copy (m): any;
+        determinant (): any;
+        fromArray (array, offset): any;
+        toArray (array, offset): any;
     }
 
     class Shape {
@@ -161,8 +167,8 @@ declare namespace OIMO {
         belongsTo;
         collidesWith;
 
-        calculateMassInfo: function(out);
-        updateProxy: function();
+        calculateMassInfo (out): any;
+        updateProxy (): any;
     }
 
     class Box extends Shape {
@@ -185,7 +191,7 @@ declare namespace OIMO {
 
         raidus;
 
-        volume: function(): number;
+        volume (): number;
     }
 
     class Cylinder extends Shape {
@@ -205,12 +211,12 @@ declare namespace OIMO {
 
         normal: Vec3;
 
-        volume: function(): number;
+        volume (): number;
     }
 
     class Particle extends Shape {
         constructor (config /**, normal */);
-        volume: function(): number;
+        volume (): number;
     }
 
     interface ShapeConfig {
@@ -230,6 +236,13 @@ declare namespace OIMO {
         collidesWith: number | 0xffffffff;
     }
 
+    interface MassInfo {
+        // Mass of the shape.
+        mass: number | 0;
+        // The moment inertia of the shape.
+        inertia: Mat33;
+    }
+
     class RigidBody {
         constructor (Position?: Vec3, Rotation?: Quat);
 
@@ -242,7 +255,7 @@ declare namespace OIMO {
         // possible link to three Mesh;
         mesh: any | null;
 
-        id: any | NaN;
+        id: any;
         name: string | "";
         // The maximum number of shapes that can be added to a one rigid.
         //MAX_SHAPES : 64;//64;
@@ -254,7 +267,7 @@ declare namespace OIMO {
         // Please do not change from the outside this variable.
         // If you want to change the type of rigid body, always
         // Please specify the type you want to set the arguments of setupMass method.
-        type: BODY_NULL;
+        type: any; // BODY_NULL;
 
         massInfo: MassInfo;
 
@@ -334,32 +347,32 @@ declare namespace OIMO {
         // I shows rigid body to determine whether it is a sleep state.
         sleeping: boolean | false;
 
-        setParent: function (world);
-        addShape: function(shape);
-        removeShape: function(shape);
-        remove: function ();
-        dispose: function ();
-        checkContact: function(name);
-        setupMass: function (type, AdjustPosition);
-        awake: function();
-        sleep: function();
-        testWakeUp: function();
-        isLonely: function ();
-        updatePosition: function (timeStep);
-        getAxis: function ();
-        rotateInertia: function (rot, inertia, out);
-        syncShapes: function ();
-        applyImpulse: function(position, force);
-        setPosition: function(pos);
-        setQuaternion: function(q);
-        setRotation: function (rot);
-        resetPosition: function(x, y, z);
-        resetQuaternion: function(q);
-        resetRotation: function(x, y, z);
-        getPosition: function ();
-        getQuaternion: function ();
-        connectMesh: function (mesh);
-        updateMesh: function();
+        setParent (world): any;
+        addShape (shape): any;
+        removeShape (shape): any;
+        remove (): any;
+        dispose (): any;
+        checkContact (name): any;
+        setupMass (type, AdjustPosition): any;
+        awake (): any;
+        sleep (): any;
+        testWakeUp (): any;
+        isLonely (): any;
+        updatePosition (timeStep): any;
+        getAxis (): any;
+        rotateInertia (rot, inertia, out): any;
+        syncShapes (): any;
+        applyImpulse (position, force): any;
+        setPosition (pos): any;
+        setQuaternion (q): any;
+        setRotation (rot): any;
+        resetPosition (x, y, z): any;
+        resetQuaternion (q): any;
+        resetRotation (x, y, z): any;
+        getPosition (): any;
+        getQuaternion (): any;
+        connectMesh (mesh): any;
+        updateMesh (): any;
     }
 
     class World {
@@ -374,12 +387,12 @@ declare namespace OIMO {
         timerate: number | 16.66;//timeStep * 1000;
         timer: any | null;
 
-        preLoop: null;//function(){};
-        postLoop: null;//function(){};
+        preLoop: null;
+        postLoop: null;
 
         // The number of iterations for constraint solvers.
         numIterations: number | 8;
-        broadPhase: BruteForceBroadPhase | SAPBroadPhase | DBVTBroadPhase;
+        broadPhase: any; //BruteForceBroadPhase | SAPBroadPhase | DBVTBroadPhase;
         Btypes: ['None', 'BruteForce', 'Sweep & Prune', 'Bounding Volume Tree'];
         broadPhaseType: string | 'None' | 'BruteForce' | 'Sweep & Prune' | 'Bounding Volume Tree';
 
@@ -452,24 +465,26 @@ declare namespace OIMO {
         islandStack: any[];
         islandConstraints: any[];
 
-        play: function();
-        stop: function();
-        setGravity: function (ar);
-        getInfo: function ();
-        getByName: function(name);
-        removeShape: function (shape);
-        addJoint: function (joint);
-        removeJoint: function (joint);
-        addContact: function (s1, s2);
-        removeContact: function (contact);
-        getContact: function (b1, b2);
-        checkContact: function (name1, name2);
-        callSleep: function(body);
-        step: function ();
-        remove: function(obj);
-        add: function(o);
-        initBody: function(type, o);
-        initJoint: function(type, o);
+        play (): any;
+        stop (): any;
+        setGravity (ar): any;
+        getInfo (): any;
+        getByName (name): any;
+        removeShape (shape): any;
+        addJoint (joint): any;
+        removeJoint (joint): any;
+        addContact (s1, s2): any;
+        removeContact (contact): any;
+        getContact (b1, b2): any;
+        checkContact (name1, name2): any;
+        callSleep (body): any;
+        step (): any;
+        // remove(obj):any;
+        add (o): any;
+        initBody (type, o): any;
+        initJoint (type, o): any;
+        addRigidBody (rigidBody): any;
+        removeRigidBody (rigidBody): any;
     }
 }
 
