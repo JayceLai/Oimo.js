@@ -14,7 +14,8 @@
     "build/oimo.min.js",
     "build/oimo.module.js",
     "src",
-    "examples/js"
+    "examples/js",
+    "OIMO.d.ts"
   ],
   "directories": {
     "doc": "docs",
