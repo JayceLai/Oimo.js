@@ -36,7 +36,7 @@ Originally created by <a href="http://el-ement.com/blog/">Saharan</a> for action
 
 ### Usage ###
 
-install dev for creator 3d : `npm install github:JayceLai/oimo.js#cocos-dev --save`。
+install dev for creator 3d : `npm install github:JayceLai/Oimo.js#cocos-dev --save`。
 
 Download the [minified library](http://lo-th.github.io/Oimo.js/build/oimo.min.js) and include it in your HTML.<br>
 Alternatively, use **Node** and install the [package](https://www.npmjs.com/package/oimo): `npm install oimo`
