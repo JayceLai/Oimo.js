@@ -1,5 +1,5 @@
 {
-  "name": "oimo",
+  "name": "@cocos/oimo",
   "version": "1.0.9",
   "description": "JavaScript 3D physics engine.",
   "main": "build/oimo.min.js",

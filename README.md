@@ -1,5 +1,6 @@
 <p align="center"><a href="http://lo-th.github.io/Oimo.js/"><img src="http://lo-th.github.io/Oimo.js/examples/assets/img/logo.png"/></a><br>
-Oimo.js is a lightweight 3d physics engine for JavaScript.<br>
+Oimo.js for cocos creator 3d<br>
+<br>Oimo.js is a lightweight 3d physics engine for JavaScript.<br>
 It's a full javascript conversion of <a href="https://github.com/saharan/OimoPhysics/">OimoPhysics</a><br>
 Originally created by <a href="http://el-ement.com/blog/">Saharan</a> for actionscript 3.0.
 <br>
@@ -34,6 +35,8 @@ Originally created by <a href="http://el-ement.com/blog/">Saharan</a> for action
 - [Worker test](http://lo-th.github.io/Oimo.js/examples/test_worker.html)
 
 ### Usage ###
+
+install dev for creator 3d : `npm install github:JayceLai/oimo.js#cocos-dev --save`。
 
 Download the [minified library](http://lo-th.github.io/Oimo.js/build/oimo.min.js) and include it in your HTML.<br>
 Alternatively, use **Node** and install the [package](https://www.npmjs.com/package/oimo): `npm install oimo`
