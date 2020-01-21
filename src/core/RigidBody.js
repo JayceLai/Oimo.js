@@ -124,6 +124,10 @@ function RigidBody ( Position, Rotation ) {
     // I shows rigid body to determine whether it is a sleep state.
     this.sleeping = false;
 
+    // 
+    this.useGravity = true;
+    this.linearFactor = new Vec3(1,1,1);
+    this.angularFactor = new Vec3(1,1,1);
 }
 
 Object.assign( RigidBody.prototype, {
@@ -375,6 +379,9 @@ Object.assign( RigidBody.prototype, {
                     this.controlRot = false;
 
                 }
+
+                this.linearVelocity.multiply(this.linearFactor);
+                this.angularVelocity.multiply(this.angularFactor);
 
                 this.position.addScaledVector(this.linearVelocity, timeStep);
                 this.orientation.addTime(this.angularVelocity, timeStep);

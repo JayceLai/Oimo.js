@@ -645,7 +645,7 @@ Object.assign( World.prototype, {
             while (j--){
             //or(var j=0, l=islandNumRigidBodies; j<l; j++){
                 body = this.islandRigidBodies[j];
-                if(body.isDynamic){
+                if(body.useGravity && body.isDynamic){
                     body.linearVelocity.addEqual(gVel);
                     /*body.linearVelocity.x+=gx;
                     body.linearVelocity.y+=gy;
